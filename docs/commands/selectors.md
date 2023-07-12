@@ -181,7 +181,8 @@ Limits the selection of targets by game mode. Only players can use game mode, so
 Possible values include:
 *   `0`, `s`, or `survival` for Survival mode
 *   `1`, `c`, or `creative` for Creative mode
-*   `2`, `a`, or `adventure` for Adventure mode
+*   `2`, `a`, or `adventure` for Adventure Mode
+*   `spectator` for Spectator mode
 *   `d` or `default` for the default game mode
 
 Examples:
@@ -197,7 +198,7 @@ Limits the selection of targets by what items they have in their inventory. This
 
 -   `item=<string>`—The identifier of the item to test for, and the only required argument. This can accept custom identifiers too.
 -   `quantity=<int>`—The amount of the item to test for. Accepts a [range](/commands/selectors#scores) for a value. This argument can also be negated.
--   `data=<int>`—The data value of the item to test for. Defaults to -1. **Currently not functional:** [MCPE-151920](https://bugs.mojang.com/browse/MCPE-151920)
+-   `data=<int>`—The data value of the item to test for. Defaults to -1. **Currently bugged, it only works with non-block items, such as stcks, enchanted books, armor, weapons, etc:** [MCPE-151920](https://bugs.mojang.com/browse/MCPE-151920)
 -   `location=<string>`—The slot the item should be located in. Accepts the same arguments as the slotType argument in the `/replaceitem` command.
 -   `slot=<int>`—The index of the slot used in the "location" argument, and can only be used with "location". Accepts a range for a value. This argument can be negated.
 
